@@ -123,7 +123,6 @@ void runMotors(){
 void showData() {
     if (newData == true) {
         Serial.print("Data received ");
-        //Serial.print(dataReceived[0]);
         Serial.println(dataReceived);
         newData = false;
     }
