@@ -80,13 +80,13 @@ void setup() {
 
 void loop() {
     getData();
-    //showData();
+    showData();
 
     runMotors();
     getMPU();
 
     //Serial.println("running");
-    delay(50);
+    delay(80);
 
 }
 
@@ -109,6 +109,7 @@ void getMPU(){
     rollServo.write(90);
   }
   
+  /*
   Serial.print(pitchServo.read());
   Serial.print("  ");
   Serial.print(rollServo.read());
@@ -119,7 +120,7 @@ void getMPU(){
   Serial.print(roll);
   
   
-  Serial.println();
+  Serial.println();*/
 }
 
 void getData() {
